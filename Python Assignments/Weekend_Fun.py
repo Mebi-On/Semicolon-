@@ -1,5 +1,7 @@
 
 #1
+
+print("Question 1: Safe Division")
 first_number = int(input("Enter the first number: "))
 second_number = int(input("Enter the second number: "))
 
@@ -8,8 +10,10 @@ if second_number != 0:
     print(result)
 if second_number == 0:
     print("Cannot division by zero")
+print()
 
 #2
+print("Question 2: Largest of three")
 number1 = int(input("Enter the first number: "))
 number2 = int(input("Enter the second number: "))
 number3 = int(input("Enter the third number: "))
@@ -20,8 +24,10 @@ if number2 >= number1 and number2 >= number3:
     print("The largest number is:",  number2)
 else:
     print("The largest number is:",  number3)
+print()
 
 #3
+print("Question 3: Ticket Price Calculator")
 age = int(input("Enter your age: "))
 
 if age < 5:
@@ -32,8 +38,10 @@ elif  13 <= age <= 64:
     print("$12")
 else:
     print("$8")
+print()
 
 #4
+print("Question 4: BMI Category")
 weigth = int(input("Enter your weigth in kg: "))
 height = int(input("Enter your height in meter: "))
 bmi = weigth / (height * height)
@@ -46,8 +54,10 @@ elif 25 <= bmi <= 29.9:
     print("Overweigth")
 else:
     print("Obesity")
+print()
 
 #5
+print("Question 5: Discount Eligibility")
 total_bill = int(input("Enter the total bill amount: "))
 is_member = input("Are you a member? ('yes' or 'no'): ")
 if total_bill >= 1000 and is_member == 'yes':
@@ -61,8 +71,10 @@ elif total_bill >= 1000 and is_member == 'no':
 else:
     final_amount = total_bill
     print("Final amount is:", final_amount)
+print()
 
 #6
+print("Question 6: Quadrant Finder")
 x = int(input("Enter integer x: "))
 y = int(input("Enter integer y: "))
 
@@ -80,8 +92,10 @@ if y == 0 and x != 0:
     print("X-axis")
 if x == 0 and y != 0:
     print("Y-axis")
+print()
 
 # 7
+print("Question 7: Rock-Paper-Scissors")
 p_1 = input("Player 1 enter rock, paper or scissors: ")
 p_2 = input("Player 2 enter rock, paper or scissors: ")
 
@@ -105,9 +119,11 @@ if p_1 != p_2:
             print("Player 2 wins")
 else:
     print("Tie")
+print()
 
 
 # 8 
+print("Question 8: Vowel or Consonants")
 letter = input("Enter a letter: ").lower()
 if letter in 'aeiou':
     print("Vowel")
