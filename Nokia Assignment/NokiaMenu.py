@@ -1,4 +1,4 @@
-print("""
+println("""
         getNokiaMenu
         1. Phone book
         2. Messages
@@ -20,7 +20,7 @@ print("""
         mainMenuInput = int(input())
         match (mainMenuInput) {
             case 1 -> {
-                print(
+                println(
                         """
                     Phone book selected.
                     Phone book menu:
@@ -34,62 +34,62 @@ print("""
                     8. Options
                     9. Speed dials
                     10. Voice tags
-                    0. Back to main menu
+                    0. Back to previous menu.
                         """
                 );
                 int phoneBookMenuInput = int(input())
                 switch (phoneBookMenuInput) {
                     case 1 ->
-                        print("Search selected.");
+                        println("Search selected.");
                     case 2 ->
-                        print("Service Nos. selected.");
+                        println("Service Nos. selected.");
                     case 3 ->
-                        print("Add name selected.");
+                        println("Add name selected.");
                     case 4 ->
-                        print("Erase selected.");
+                        println("Erase selected.");
                     case 5 ->
-                        print("Edit selected.");
+                        println("Edit selected.");
                     case 6 ->
-                        print("Assign tone selected.");
+                        println("Assign tone selected.");
                     case 7 ->
-                        print("Send b'card selected.");
+                        println("Send b'card selected.");
                     case 8 -> {
-                        print(
+                        println(
                                 """
                     Options selected.
                     Phone book Options menu:
                     1. Type of view
                     2. Memory status
-                    0. Back to main menu
+                    0. Back to previous menu.
                         """
                         );
 
                         int phoneBookOptionsMenuInput = int(input())
                         switch (phoneBookOptionsMenuInput) {
                             case 1 ->
-                                print("Type of view selected.");
+                                println("Type of view selected.");
                             case 2 ->
-                                print("Memory status selected.");
+                                println("Memory status selected.");
                             case 0 ->
-                                print("Returning to main menu.");
+                                println("Returning to previous menu.");
                             default ->
-                                print("Invalid, Please try again.");
+                                println("Invalid, Please try again.");
 
                         }
                     }
                     case 9 ->
-                        print("Speed dials selected.");
+                        println("Speed dials selected.");
                     case 10 ->
-                        print("Voice tags selected.");
+                        println("Voice tags selected.");
                     case 0 ->
-                        print("Returning to main menu.");
+                        println("Returning to previous menu.");
                     default ->
-                        print("Invalid, Please try again.");
+                        println("Invalid, Please try again.");
                 }
             }
 
             case 2 -> {
-                print(
+                println(
                         """
                     Messages selected.
                     Messages menu:
@@ -103,7 +103,7 @@ print("""
                     8. Info Service
                     9. Voice mailbox number
                     10. Service command editor
-                    0. Back to main menu
+                    0. Back to previous menu.
 
                     Enter here:
                         """
@@ -111,107 +111,107 @@ print("""
                 int messagesMenuInput = int(input())
                 switch (messagesMenuInput) {
                     case 1 ->
-                        print("Write messages selected.");
+                        println("Write messages selected.");
                     case 2 ->
-                        print("Inbox selected.");
+                        println("Inbox selected.");
                     case 3 ->
-                        print("Outbox selected.");
+                        println("Outbox selected.");
                     case 4 ->
-                        print("Picture messages selected.");
+                        println("Picture messages selected.");
                     case 5 ->
-                        print("Templates selected.");
+                        println("Templates selected.");
                     case 6 ->
-                        print("Smileys selected.");
+                        println("Smileys selected.");
                     case 7 -> {
-                        print(
+                        println(
                                 """
                             Message settings selected.
                             Message setting menu:
                             1. Set 1^2
                             2. Common^3
-                            0. Back to main menu
+                            0. Back to previous menu.
                                 """
                         );
 
                         int messagaeSettingMenuInput = int(input())
                         switch (messagaeSettingMenuInput) {
                             case 1 -> {
-                                print(
+                                println(
                                         """
                             Set 1^2 selected.
                             Set 1^2 menu:
                             1. Message center number
                             2. Messages sent as
                             3. Message validity
-                            0. Back to main menu
+                            0. Back to previous menu.
                             """
                                 );
 
                                 int set1MenuInput = int(input())
                                 switch (set1MenuInput) {
                                     case 1 ->
-                                        print("Message center number selected.");
+                                        println("Message center number selected.");
                                     case 2 ->
-                                        print("Messages sent as");
+                                        println("Messages sent as");
                                     case 3 ->
-                                        print("Message validity");
+                                        println("Message validity");
                                     case 0 ->
-                                        print("Returning to main menu.");
+                                        println("Returning to previous menu.");
                                     default ->
-                                        print("Invalid, Please try again.");
+                                        println("Invalid, Please try again.");
 
                                 }
                             }
                             case 2 -> {
-                                print(
+                                println(
                                         """
                                     Common^3 selected.
                                     Common^3 menu:
                                     1. Delivery reports
                                     2. Reply via same center
                                     3. Character support
-                                    0. Back to main menu
+                                    0. Back to previous menu.
                                     """
                                 );
 
                                 int common3MenuInput = int(input())
                                 switch (common3MenuInput) {
                                     case 1 ->
-                                        print("Delivery reports");
+                                        println("Delivery reports");
                                     case 2 ->
-                                        print("Reply via same center");
+                                        println("Reply via same center");
                                     case 3 ->
-                                        print("Character support");
+                                        println("Character support");
                                     case 0 ->
-                                        print("Returning to main menu.");
+                                        println("Returning to previous menu.");
                                     default ->
-                                        print("Invalid, Please try again.");
+                                        println("Invalid, Please try again.");
 
                                 }
                             }
                             case 0 ->
-                                print("Returning to main menu.");
+                                println("Returning to previous menu.");
                             default ->
-                                print("Invalid, Please try again.");
+                                println("Invalid, Please try again.");
 
                         }
                     }
                     case 8 ->
-                        print("Info Service selected.");
+                        println("Info Service selected.");
                     case 9 ->
-                        print("Voice mailbox number selected.");
+                        println("Voice mailbox number selected.");
                     case 10 ->
-                        print("Service command editor selected.");
+                        println("Service command editor selected.");
                     case 0 ->
-                        print("Returning to main menu.");
+                        println("Returning to previous menu.");
                     default ->
-                        print("Invalid, Please try again.");
+                        println("Invalid, Please try again.");
                 }
             }
             case 3 ->
-                print("Chat selected.");
+                println("Chat selected.");
             case 4 -> {
-                print(
+                println(
                         """
                     Call register selected.
                     Call register menu:
@@ -223,7 +223,7 @@ print("""
                     6. Show call costs
                     7. Call cost settings
                     8. Prepaid credit
-                    0. Back to main menu
+                    0. Back to previous menu.
 
                     Enter here:
                         """
@@ -231,15 +231,15 @@ print("""
                 int callRegisterMenuInput = int(input())
                 switch (callRegisterMenuInput) {
                     case 1 ->
-                        print("Missed calls selected.");
+                        println("Missed calls selected.");
                     case 2 ->
-                        print("Recived calls selected.");
+                        println("Recived calls selected.");
                     case 3 ->
-                        print("Dialled number selected.");
+                        println("Dialled number selected.");
                     case 4 ->
-                        print("Erase recent call lists selected.");
+                        println("Erase recent call lists selected.");
                     case 5 -> {
-                        print(
+                        println(
                                 """
                             Show call duration selected.
                             Show call duration menu:
@@ -248,7 +248,7 @@ print("""
                             3. Recivied call' duration
                             4. Dialled calls' duration 
                             5. Clear timeers
-                            0. Back to main menu
+                            0. Back to previous menu.
 
                             Enter here:
                                 """
@@ -256,82 +256,82 @@ print("""
                         int callDurationMenuInput = int(input())
                         switch (callDurationMenuInput) {
                             case 1 ->
-                                print("Last call duration selected.");
+                                println("Last call duration selected.");
                             case 2 ->
-                                print("All calls' duration selected.");
+                                println("All calls' duration selected.");
                             case 3 ->
-                                print("Recivied call' duration selected.");
+                                println("Recivied call' duration selected.");
                             case 4 ->
-                                print("Dialled calls' duration selected.");
+                                println("Dialled calls' duration selected.");
                             case 5 ->
-                                print("Clear timers selected.");
+                                println("Clear timers selected.");
                             case 0 ->
-                                print("Returning to main menu.");
+                                println("Returning to previous menu.");
                             default ->
-                                print("Invalid, Please try again.");
+                                println("Invalid, Please try again.");
                         }
                     }
                     case 6 -> {
-                        print(
+                        println(
                                 """
                             Show call costs selected.
                             Show call costs menu:
                             1. Last call cost
                             2. All calls' cost
                             3. Clear counters
-                            0. Back to main menu
+                            0. Back to previous menu.
                             """
                         );
 
                         int callCostMenuInput = int(input())
                         switch (callCostMenuInput) {
                             case 1 ->
-                                print("Last call cost selected.");
+                                println("Last call cost selected.");
                             case 2 ->
-                                print("All calls' cost selected.");
+                                println("All calls' cost selected.");
                             case 3 ->
-                                print("Clear counters");
+                                println("Clear counters");
                             case 0 ->
-                                print("Returning to main menu.");
+                                println("Returning to previous menu.");
                             default ->
-                                print("Invalid, Please try again.");
+                                println("Invalid, Please try again.");
 
                         }
                     }
                     case 7 -> {
-                        print(
+                        println(
                                 """
                             Call cost settings selected.
                             Call cost setting menu:
                             1. Call cost limit
                             2. Show cost in
-                            0. Back to main menu
+                            0. Back to previous menu.
                                 """
                         );
 
                         int callCostSettingMenuInput = int(input())
                         switch (callCostSettingMenuInput) {
                             case 1 ->
-                                print("Call cost limit selected.");
+                                println("Call cost limit selected.");
                             case 2 ->
-                                print("Show call cost in selected.");
+                                println("Show call cost in selected.");
                             case 0 ->
-                                print("Returning to main menu.");
+                                println("Returning to previous menu.");
                             default ->
-                                print("Invalid, Please try again.");
+                                println("Invalid, Please try again.");
 
                         }
                     }
                     case 8 ->
-                        print("Prepaid credit selected.");
+                        println("Prepaid credit selected.");
                     case 0 ->
-                        print("Returning to main menu.");
+                        println("Returning to previous menu.");
                     default ->
-                        print("Invalid, Please try again.");
+                        println("Invalid, Please try again.");
                 }
             }
             case 5 -> {
-                print(
+                println(
                         """
                     Tones selected.
                     Tones menu:
@@ -344,37 +344,37 @@ print("""
                     7. Warning and game tones
                     8. Vibrating alert
                     9. Screen saver
-                    0. Back to main menu
+                    0. Back to previous menu.
                         """
                 );
                 int tonesMenuInput = int(input())
                 switch (tonesMenuInput) {
                     case 1 ->
-                        print("Ringing tone selected.");
+                        println("Ringing tone selected.");
                     case 2 ->
-                        print("Ringing volume selected.");
+                        println("Ringing volume selected.");
                     case 3 ->
-                        print("Incoming call alert selected.");
+                        println("Incoming call alert selected.");
                     case 4 ->
-                        print("Composer selected.");
+                        println("Composer selected.");
                     case 5 ->
-                        print("Message alert tone selected.");
+                        println("Message alert tone selected.");
                     case 6 ->
-                        print("Keypad tones selected.");
+                        println("Keypad tones selected.");
                     case 7 ->
-                        print("Warning and game tones selected.");
+                        println("Warning and game tones selected.");
                     case 8 ->
-                        print("Vibrating alert menu:");
+                        println("Vibrating alert menu:");
                     case 9 ->
-                        print("Screen saver selected.");
+                        println("Screen saver selected.");
                     case 0 ->
-                        print("Returning to main menu.");
+                        println("Returning to previous menu.");
                     default ->
-                        print("Invalid, Please try again.");
+                        println("Invalid, Please try again.");
                 }
             }
             case 6 -> {
-                print(
+                println(
                         """
                     Settings selected.
                     Settings menu:
@@ -382,13 +382,13 @@ print("""
                     2. Phone settings
                     3. Security settings
                     4. Restore factory settings
-                    0. Back to main menu
+                    0. Back to previous menu.
                         """
                 );
                 int settingsMenuInput = int(input())
                 switch (settingsMenuInput) {
                     case 1 -> {
-                        print(
+                        println(
                                 """
                                 Call settings selected."
                                 Call settings menu:
@@ -398,33 +398,33 @@ print("""
                                 4. Own number sending
                                 5. Phone line in use
                                 6. Automatic answer
-                                0. Back to main menu
+                                0. Back to previous menu.
     
                                 """
                         );
                         int callSettingMenuInput = int(input())
                         switch (callSettingMenuInput) {
                             case 1 ->
-                                print("Automatic redial selected.");
+                                println("Automatic redial selected.");
                             case 2 ->
-                                print("Ringing volume selected.");
+                                println("Ringing volume selected.");
                             case 3 ->
-                                print("Call waiting options selected.");
+                                println("Call waiting options selected.");
                             case 4 ->
-                                print("Own number sending selected.");
+                                println("Own number sending selected.");
                             case 5 ->
-                                print("Phone line in use selected.");
+                                println("Phone line in use selected.");
                             case 6 ->
-                                print("Automatic answer selected.");
+                                println("Automatic answer selected.");
                             case 0 ->
-                                print("Returning to main menu.");
+                                println("Returning to previous menu.");
                             default ->
-                                print("Invalid, Please try again.");
+                                println("Invalid, Please try again.");
                         }
 
                     }
                     case 2 -> {
-                        print(
+                        println(
                                 """
                                 Phone settings selected.
                                 Phone settings menu:
@@ -434,32 +434,32 @@ print("""
                                 4. Network selection
                                 5. Lights
                                 6. Confirm SIM service actions
-                                0. Back to main menu
+                                0. Back to previous menu.
                             """
                         );
                         int phoneSettingMenuInput = int(input())
                         switch (phoneSettingMenuInput) {
                             case 1 ->
-                                print("Language selected.");
+                                println("Language selected.");
                             case 2 ->
-                                print("Cell info display selected.");
+                                println("Cell info display selected.");
                             case 3 ->
-                                print("Welcome note selected.");
+                                println("Welcome note selected.");
                             case 4 ->
-                                print("Network selection selected.");
+                                println("Network selection selected.");
                             case 5 ->
-                                print("Lights selected.");
+                                println("Lights selected.");
                             case 6 ->
-                                print("Confirm SIM service actions selected.");
+                                println("Confirm SIM service actions selected.");
                             case 0 ->
-                                print("Returning to main menu.");
+                                println("Returning to previous menu.");
                             default ->
-                                print("Invalid, Please try again.");
+                                println("Invalid, Please try again.");
                         }
 
                     }
                     case 3 -> {
-                        print(
+                        println(
                                 """
                                 Security settings selected.
                                 Security settings menu:
@@ -469,48 +469,48 @@ print("""
                                 4. Closed user group
                                 5. Phone security
                                 6. Change access codes
-                                0. Back to main menu
+                                0. Back to previous menu.
                             
                                         """
                         );
                         int securitySettingMenuInput = int(input())
                         switch (securitySettingMenuInput) {
                             case 1 ->
-                                print("PIN code request selected.");
+                                println("PIN code request selected.");
                             case 2 ->
-                                print("Call barring service selected.");
+                                println("Call barring service selected.");
                             case 3 ->
-                                print("Fixed dialling selected.");
+                                println("Fixed dialling selected.");
                             case 4 ->
-                                print("Closed user group selected.");
+                                println("Closed user group selected.");
                             case 5 ->
-                                print("Phone security selected.");
+                                println("Phone security selected.");
                             case 6 ->
-                                print("Change access codes selected.");
+                                println("Change access codes selected.");
                             case 0 ->
-                                print("Returning to main menu.");
+                                println("Returning to previous menu.");
                             default ->
-                                print("Invalid, Please try again.");
+                                println("Invalid, Please try again.");
                         }
                     }
                     case 4 ->
-                        print("Restore factory settings.");
+                        println("Restore factory settings.");
                     case 0 ->
-                        print("Returning to main menu.");
+                        println("Returning to previous menu.");
                     default ->
-                        print("Invalid, Please try again.");
+                        println("Invalid, Please try again.");
                 }
             }
             case 7 ->
-                print("Call divert selected.");
+                println("Call divert selected.");
             case 8 ->
-                print("Games selected.");
+                println("Games selected.");
             case 9 ->
-                print("Calculator selected.");
+                println("Calculator selected.");
             case 10 ->
-                print("Reminders selected.");
+                println("Reminders selected.");
             case 11 -> {
-                print(
+                println(
                         """
                     Clock selected.
                     Clock menu:
@@ -520,35 +520,35 @@ print("""
                     4. Stop watch
                     5. Countdown timer
                     6. Auto update of date and time
-                    0. Back to main menu
+                    0. Back to previous menu.
                         """
                 );
                 int clockMenuInput = int(input())
                 switch (clockMenuInput) {
                     case 1 ->
-                        print("Alarm clock selected.");
+                        println("Alarm clock selected.");
                     case 2 ->
-                        print("Clock settings selected.");
+                        println("Clock settings selected.");
                     case 3 ->
-                        print("Date settings selected.");
+                        println("Date settings selected.");
                     case 4 ->
-                        print("Stop watch selected.");
+                        println("Stop watch selected.");
                     case 5 ->
-                        print("Countdown timer selected.");
+                        println("Countdown timer selected.");
                     case 6 ->
-                        print("Auto update of date and time selected.");
+                        println("Auto update of date and time selected.");
                     case 0 ->
-                        print("Returning to main menu.");
+                        println("Returning to previous menu.");
                     default ->
-                        print("Invalid, Please try again.");
+                        println("Invalid, Please try again.");
                 }
             }
             case 12 ->
-                print("Profiles selected.");
+                println("Profiles selected.");
             case 13 ->
-                print("SIM services selected.");
+                println("SIM services selected.");
             default ->
-                print("Invalid, Please try again.");
+                println("Invalid, Please try again.");
         }
 
     }
