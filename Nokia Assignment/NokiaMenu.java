@@ -2,7 +2,6 @@
 import java.util.Scanner;
 
 public class NokiaMenu {
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -54,20 +53,34 @@ public class NokiaMenu {
 
                         int phoneBookMenuInput = input.nextInt();
                         switch (phoneBookMenuInput) {
-                            case 1 ->
+                            case 1 ->{
                                 System.out.println("Search selected.");
-                            case 2 ->
+				break mainloop;
+				}
+                            case 2 ->{
                                 System.out.println("Service Nos. selected.");
-                            case 3 ->
+				break mainloop;
+				}
+                            case 3 ->{
                                 System.out.println("Add name selected.");
-                            case 4 ->
+				break mainloop;
+				}
+                            case 4 ->{
                                 System.out.println("Erase selected.");
-                            case 5 ->
+				break mainloop;
+				}
+                            case 5 ->{
                                 System.out.println("Edit selected.");
-                            case 6 ->
+				break mainloop;
+				}
+                            case 6 ->{
                                 System.out.println("Assign tone selected.");
-                            case 7 ->
-                                System.out.println("Send b'card selected.");
+				break mainloop;
+				}
+                            case 7 ->{
+                                System.out.println("Send b'card selected.");	
+				break mainloop;
+				}
                             case 8 -> {
                                 phoneBookOptionsLoop:
                                 while (true) {
@@ -85,10 +98,14 @@ public class NokiaMenu {
 
                                     int phoneBookOptionsMenuInput = input.nextInt();
                                     switch (phoneBookOptionsMenuInput) {
-                                        case 1 ->
+                                        case 1 ->{
                                             System.out.println("Type of view selected.");
-                                        case 2 ->
+					    break mainloop;
+				            }
+                                        case 2 ->{
                                             System.out.println("Memory status selected.");
+					    break mainloop;
+				            }
                                         case 0 -> {
                                             System.out.println("Returning to previous menu.");
                                             break phoneBookOptionsLoop;
@@ -99,10 +116,14 @@ public class NokiaMenu {
                                     }
                                 }
                             }
-                            case 9 ->
+                            case 9 ->{
                                 System.out.println("Speed dials selected.");
-                            case 10 ->
+				break mainloop;
+				}
+                            case 10 ->{
                                 System.out.println("Voice tags selected.");
+				break mainloop;
+				}
                             case 0 -> {
                                 System.out.println("Returning to previous menu.");
                                 break phonebookLoop;
@@ -138,18 +159,30 @@ public class NokiaMenu {
 
                         int messagesMenuInput = input.nextInt();
                         switch (messagesMenuInput) {
-                            case 1 ->
+                            case 1 ->{
                                 System.out.println("Write messages selected.");
-                            case 2 ->
+				break mainloop;
+				}
+                            case 2 ->{
                                 System.out.println("Inbox selected.");
-                            case 3 ->
+				break mainloop;
+				}
+                            case 3 ->{
                                 System.out.println("Outbox selected.");
-                            case 4 ->
+				break mainloop;
+				}
+                            case 4 ->{
                                 System.out.println("Picture messages selected.");
-                            case 5 ->
+				break mainloop;
+				}
+                            case 5 ->{
                                 System.out.println("Templates selected.");
-                            case 6 ->
+				break mainloop;
+				}
+                            case 6 ->{
                                 System.out.println("Smileys selected.");
+				break mainloop;
+				}
                             case 7 -> {
                                 messageSettingsLoop:
                                 while (true) {
@@ -184,12 +217,18 @@ public class NokiaMenu {
 
                                                 int set1MenuInput = input.nextInt();
                                                 switch (set1MenuInput) {
-                                                    case 1 ->
+                                                    case 1 ->{
                                                         System.out.println("Message center number selected.");
-                                                    case 2 ->
+							break mainloop;
+							}
+                                                    case 2 ->{
                                                         System.out.println("Messages sent as");
-                                                    case 3 ->
+							break mainloop;
+							}
+                                                    case 3 ->{
                                                         System.out.println("Message validity");
+							break mainloop;
+							}		
                                                     case 0 -> {
                                                         System.out.println("Returning to previous menu.");
                                                         break set1Loop;
@@ -218,12 +257,18 @@ public class NokiaMenu {
 
                                                 int common3MenuInput = input.nextInt();
                                                 switch (common3MenuInput) {
-                                                    case 1 ->
+                                                    case 1 ->{
                                                         System.out.println("Delivery reports");
-                                                    case 2 ->
+							break mainloop;
+							}
+                                                    case 2 -> {
                                                         System.out.println("Reply via same center");
-                                                    case 3 ->
+							break mainloop;
+							}
+                                                    case 3 ->{
                                                         System.out.println("Character support");
+							break mainloop;
+							}
                                                     case 0 -> {
                                                         System.out.println("Returning to previous menu.");
                                                         break common3Loop;
@@ -244,12 +289,18 @@ public class NokiaMenu {
                                     }
                                 }
                             }
-                            case 8 ->
+                            case 8 ->{
                                 System.out.println("Info Service selected.");
-                            case 9 ->
+				break mainloop;
+				}
+                            case 9 ->{
                                 System.out.println("Voice mailbox number selected.");
-                            case 10 ->
+				break mainloop;
+				}
+                            case 10 ->{
                                 System.out.println("Service command editor selected.");
+				break mainloop;
+				}
                             case 0 -> {
                                 System.out.println("Returning to previous menu.");
                                 break messagesLoop;
@@ -259,8 +310,10 @@ public class NokiaMenu {
                         }
                     }
                 }
-                case 3 ->
+                case 3 -> {
                     System.out.println("Chat selected.");
+		    break mainloop;
+		    }
                 case 4 -> {
                     callRegisterLoop:
                     while (true) {
@@ -283,14 +336,22 @@ public class NokiaMenu {
 
                         int callRegisterMenuInput = input.nextInt();
                         switch (callRegisterMenuInput) {
-                            case 1 ->
+                            case 1 ->{
                                 System.out.println("Missed calls selected.");
-                            case 2 ->
+				break mainloop;
+				}
+                            case 2 ->{
                                 System.out.println("Recived calls selected.");
-                            case 3 ->
+				break mainloop;
+				}
+                            case 3 ->{
                                 System.out.println("Dialled number selected.");
-                            case 4 ->
+				break mainloop;
+				}
+                            case 4 ->{
                                 System.out.println("Erase recent call lists selected.");
+				break mainloop;
+				}
                             case 5 -> {
                                 callDurationLoop:
                                 while (true) {
@@ -310,16 +371,26 @@ public class NokiaMenu {
 
                                     int callDurationMenuInput = input.nextInt();
                                     switch (callDurationMenuInput) {
-                                        case 1 ->
+                                        case 1 -> {
                                             System.out.println("Last call duration selected.");
-                                        case 2 ->
+					    break mainloop;
+					    }
+                                        case 2 ->{
                                             System.out.println("All calls' duration selected.");
-                                        case 3 ->
+					    break mainloop;
+					    }
+                                        case 3 ->{
                                             System.out.println("Recivied call' duration selected.");
-                                        case 4 ->
+					    break mainloop;
+					    }
+                                        case 4 ->{
                                             System.out.println("Dialled calls' duration selected.");
-                                        case 5 ->
+					    break mainloop;
+					    }
+                                        case 5 ->{
                                             System.out.println("Clear timers selected.");
+					    break mainloop;
+					    }
                                         case 0 -> {
                                             System.out.println("Returning to previous menu.");
                                             break callDurationLoop;
@@ -345,12 +416,18 @@ public class NokiaMenu {
 
                                     int callCostMenuInput = input.nextInt();
                                     switch (callCostMenuInput) {
-                                        case 1 ->
+                                        case 1 ->{
                                             System.out.println("Last call cost selected.");
-                                        case 2 ->
+					    break mainloop;
+					    }
+                                        case 2 ->{
                                             System.out.println("All calls' cost selected.");
-                                        case 3 ->
+					    break mainloop;
+					    }
+                                        case 3 ->{
                                             System.out.println("Clear counters");
+					    break mainloop;
+					    }
                                         case 0 -> {
                                             System.out.println("Returning to previous menu.");
                                             break callCostLoop;
@@ -376,10 +453,14 @@ public class NokiaMenu {
 
                                     int callCostSettingMenuInput = input.nextInt();
                                     switch (callCostSettingMenuInput) {
-                                        case 1 ->
+                                        case 1 ->{
                                             System.out.println("Call cost limit selected.");
-                                        case 2 ->
+					    break mainloop;
+					    }
+                                        case 2 ->{
                                             System.out.println("Show call cost in selected.");
+					    break mainloop;
+					    }
                                         case 0 -> {
                                             System.out.println("Returning to previous menu.");
                                             break callCostSettingLoop;
@@ -390,8 +471,10 @@ public class NokiaMenu {
                                     }
                                 }
                             }
-                            case 8 ->
+                            case 8 ->{
                                 System.out.println("Prepaid credit selected.");
+				break mainloop;
+				}
                             case 0 -> {
                                 System.out.println("Returning to previous menu.");
                                 break callRegisterLoop;
@@ -424,24 +507,42 @@ public class NokiaMenu {
 
                         int tonesMenuInput = input.nextInt();
                         switch (tonesMenuInput) {
-                            case 1 ->
+                            case 1 ->{
                                 System.out.println("Ringing tone selected.");
-                            case 2 ->
+				break mainloop;
+				}
+                            case 2 ->{
                                 System.out.println("Ringing volume selected.");
-                            case 3 ->
+				break mainloop;
+				}
+                            case 3 ->{
                                 System.out.println("Incoming call alert selected.");
-                            case 4 ->
+				break mainloop;
+				}
+                            case 4 ->{
                                 System.out.println("Composer selected.");
-                            case 5 ->
+				break mainloop;
+				}
+                            case 5 ->{
                                 System.out.println("Message alert tone selected.");
-                            case 6 ->
+				break mainloop;
+				}
+                            case 6 ->{
                                 System.out.println("Keypad tones selected.");
-                            case 7 ->
+				break mainloop;
+				}
+                            case 7 ->{
                                 System.out.println("Warning and game tones selected.");
-                            case 8 ->
+				break mainloop;
+				}
+                            case 8 ->{
                                 System.out.println("Vibrating alert menu:");
-                            case 9 ->
+				break mainloop;
+				}
+                            case 9 ->{
                                 System.out.println("Screen saver selected.");
+				break mainloop;
+				}
                             case 0 -> {
                                 System.out.println("Returning to previous menu.");
                                 break tonesLoop;
@@ -488,18 +589,30 @@ public class NokiaMenu {
 
                                     int callSettingMenuInput = input.nextInt();
                                     switch (callSettingMenuInput) {
-                                        case 1 ->
+                                        case 1 ->{
                                             System.out.println("Automatic redial selected.");
-                                        case 2 ->
+					    break mainloop;
+					    }
+                                        case 2 ->{
                                             System.out.println("Ringing volume selected.");
-                                        case 3 ->
+					    break mainloop;
+					    }
+                                        case 3 ->{
                                             System.out.println("Call waiting options selected.");
-                                        case 4 ->
+					    break mainloop;
+					    }
+                                        case 4 ->{
                                             System.out.println("Own number sending selected.");
-                                        case 5 ->
+					    break mainloop;
+					    }
+                                        case 5 ->{
                                             System.out.println("Phone line in use selected.");
-                                        case 6 ->
+					    break mainloop;
+					    }
+                                        case 6 ->{
                                             System.out.println("Automatic answer selected.");
+					    break mainloop;
+					    }
                                         case 0 -> {
                                             System.out.println("Returning to previous menu.");
                                             break callSettingMenuLoop;
@@ -529,18 +642,30 @@ public class NokiaMenu {
 
                                     int phoneSettingMenuInput = input.nextInt();
                                     switch (phoneSettingMenuInput) {
-                                        case 1 ->
+                                        case 1 ->{
                                             System.out.println("Language selected.");
-                                        case 2 ->
+					    break mainloop;
+					    }
+                                        case 2 ->{
                                             System.out.println("Cell info display selected.");
-                                        case 3 ->
+					    break mainloop;
+					    }
+                                        case 3 ->{
                                             System.out.println("Welcome note selected.");
-                                        case 4 ->
+					    break mainloop;
+					    }
+                                        case 4 ->{
                                             System.out.println("Network selection selected.");
-                                        case 5 ->
+					    break mainloop;
+					    }
+                                        case 5 ->{
                                             System.out.println("Lights selected.");
-                                        case 6 ->
+					    break mainloop;
+					    }
+                                        case 6 ->{
                                             System.out.println("Confirm SIM service actions selected.");
+					    break mainloop;
+					    }
                                         case 0 -> {
                                             System.out.println("Returning to previous menu.");
                                             break phoneSettingLoop;
@@ -571,18 +696,30 @@ public class NokiaMenu {
 
                                     int securitySettingMenuInput = input.nextInt();
                                     switch (securitySettingMenuInput) {
-                                        case 1 ->
+                                        case 1 ->{
                                             System.out.println("PIN code request selected.");
-                                        case 2 ->
+					    break mainloop;
+					    }
+                                        case 2 ->{
                                             System.out.println("Call barring service selected.");
-                                        case 3 ->
+					    break mainloop;
+					    }
+                                        case 3 ->{
                                             System.out.println("Fixed dialling selected.");
-                                        case 4 ->
+					    break mainloop;
+					    }
+                                        case 4 ->{
                                             System.out.println("Closed user group selected.");
-                                        case 5 ->
+					    break mainloop;
+					    }
+                                        case 5 ->{
                                             System.out.println("Phone security selected.");
-                                        case 6 ->
+					    break mainloop;
+					    }
+                                        case 6 ->{
                                             System.out.println("Change access codes selected.");
+					    break mainloop;
+					    }
                                         case 0 -> {
                                             System.out.println("Returning to previous menu.");
                                             break securitySettingLoop;
@@ -592,8 +729,10 @@ public class NokiaMenu {
                                     }
                                 }
                             }
-                            case 4 ->
+                            case 4 ->{
                                 System.out.println("Restore factory settings.");
+				break mainloop;
+				}
                             case 0 -> {
                                 System.out.println("Returning to previous menu.");
                                 break settingsLoop;
@@ -603,14 +742,22 @@ public class NokiaMenu {
                         }
                     }
                 }
-                case 7 ->
+                case 7 ->{
                     System.out.println("Call divert selected.");
-                case 8 ->
+		    break mainloop;
+		    }
+                case 8 ->{
                     System.out.println("Games selected.");
-                case 9 ->
+		    break mainloop;
+		    }
+                case 9 ->{
                     System.out.println("Calculator selected.");
-                case 10 ->
+		    break mainloop;
+		    }
+                case 10 ->{
                     System.out.println("Reminders selected.");
+		    break mainloop;
+		    }
                 case 11 -> {
                     clockMenuLoop:
                     while (true) {
@@ -630,18 +777,30 @@ public class NokiaMenu {
 
                         int clockMenuInput = input.nextInt();
                         switch (clockMenuInput) {
-                            case 1 ->
+                            case 1 ->{
                                 System.out.println("Alarm clock selected.");
-                            case 2 ->
+		    		break mainloop;
+		    		}
+                            case 2 ->{
                                 System.out.println("Clock settings selected.");
-                            case 3 ->
+		    		break mainloop;
+		    		}
+                            case 3 ->{
                                 System.out.println("Date settings selected.");
-                            case 4 ->
+		    		break mainloop;
+		    		}
+                            case 4 ->{
                                 System.out.println("Stop watch selected.");
-                            case 5 ->
+		    		break mainloop;
+		    		}
+                            case 5 ->{
                                 System.out.println("Countdown timer selected.");
-                            case 6 ->
+		    		break mainloop;
+		    		}
+                            case 6 ->{
                                 System.out.println("Auto update of date and time selected.");
+		    		break mainloop;
+		    		}
                             case 0 -> {
                                 System.out.println("Returning to previous menu.");
                                 break clockMenuLoop;
@@ -651,10 +810,15 @@ public class NokiaMenu {
                         }
                     }
                 }
-                case 12 ->
+                case 12 ->{
                     System.out.println("Profiles selected.");
-                case 13 ->
+		    break mainloop;
+		    }
+                case 13 ->{
                     System.out.println("SIM services selected.");
+		    break mainloop;
+		    }
+        
                 case 0 -> {
                     System.out.println("Exiting Nokia Menu. Goodbye!");
                     break mainloop;
@@ -666,3 +830,4 @@ public class NokiaMenu {
 
     }
 }
+
