@@ -1,0 +1,8 @@
+public class MethodClass{
+	
+	public static void main(String [] args){
+	
+		int sum = MethodsInJava.add(5,6);
+		System.out.print(sum);
+	}
+}

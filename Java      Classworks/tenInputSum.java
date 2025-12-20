@@ -7,7 +7,7 @@ public class tenInputSum{
 		//int count = 1;
 		Scanner input = new Scanner(System.in);
 
-		for (int ount = 1; count <= 10; count++){
+		for (int count = 1; count <= 10; count++){
 			System.out.print("Enter a value: ");
                 	int userInput = input.nextInt();
 			sum += userInput;
