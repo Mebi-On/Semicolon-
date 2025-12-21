@@ -1,6 +1,6 @@
-from unittest import TestCase
+import unittest
 
-class TestPalindromeAndPrime(TestCase):
+class TestPalindromeAndPrime(unittest.TestCase):
 
     def test_palindrome_and_prime_true(self):
         self.assertTrue(is_palindrome_and_prime(131))
@@ -21,8 +21,6 @@ class TestPalindromeAndPrime(TestCase):
         self.assertFalse(is_palindrome_and_prime(-131))
 
 
-
-
 def is_palindrome_and_prime(n):
     if n < 2:
         return False
@@ -35,3 +33,6 @@ def is_palindrome_and_prime(n):
             return False
 
     return True
+
+if __name__ == "__main__":
+    unittest.main()
