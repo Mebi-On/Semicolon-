@@ -1,5 +1,5 @@
 
-user_input = (input("Hello, Kindly Enter Card details to verify: "))
+user_input = input("Hello, Kindly Enter Card details to verify: ").strip()
 
 card_len = len(user_input)
 if card_len % 2 == 0:
