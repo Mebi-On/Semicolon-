@@ -1,0 +1,83 @@
+Array Class II
+
+	
+Declaration:    int[] arr; or int arr[];	
+Declares an array variable.
+
+Initialisation (size):    int[] arr = new int[5];	
+Creates an array of size 5, with default values.
+
+Initialisation (literals):    int[] arr = {1, 2, 3, 4, 5};	
+Declares and initializes an array with specific values.
+
+Access Element:	int x = arr[0];	
+Accesses the element at index 0 (first element).
+
+Modify Element:	arr[1] = 50;    
+Changes the value of the element at index 1.
+
+Length:    int size = arr.length;   
+A built-in property to get the number of elements in the array.
+
+Loop (for):    for (int i=0; i < arr.length; i++) { ... }.   
+Standard loop for iterating with an index.
+
+Loop (for-each):    for (int num : arr) { ... }	
+Simplified loop to read each element in the array.
+
+Methods 
+Sorts array elements in ascending order	
+Arrays.sort(arr);
+
+Returns a readable String representation of the array	
+System.out.println(Arrays.toString(arr));
+
+Checks if two arrays contain the same elements in the same order	
+boolean areEqual = Arrays.equals(a, b);
+
+Searches a sorted array for a specified value	
+int index = Arrays.binarySearch(arr, 5);
+
+Assigns a single value to all elements in the array	
+Arrays.fill(arr, 0);
+
+Copies an array, potentially with a new length	
+int[] copy = Arrays.copyOf(arr, 10);
+
+Returns a string representation for multi-dimensional (2D, etc.) arrays	
+System.out.println(Arrays.deepToString(matrix));
+
+
+
+ARRAY LISTS
+
+Declaration
+
+ArrayList<String> list = new ArrayList<>();
+
+Diamond (<>) Notation for Creating an Object of a Generic Class (Sting, Int, Bool, etc)
+
+Methods
+
+add Overloaded to add an element to the end of the ArrayList or at a specific index in the ArrayList.
+
+clear Removes all the elements from the ArrayList.
+
+contains Returns true if the ArrayList contains the specified element; otherwise, returns false.
+
+get Returns the element at the specified index.
+
+indexOf Returns the index of the first occurrence of the specified element in the ArrayList.
+
+remove Overloaded. Removes the first occurrence of the specified value or the element at the specified index.
+
+size Returns the number of elements stored in the ArrayList.
+
+trimToSize Trims the capacity of the ArrayList to the current number of elements. (Memory optimisation)
+
+Example	
+List<String> bookList = new ArrayList<>();
+    bookList.add("Brave King");
+    bookList.add("The Hobbit");
+    bookList.add("The Mystery");
+    bookList.add("Animal Farm");

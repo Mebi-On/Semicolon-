@@ -1,0 +1,30 @@
+#Morning cupcake 1
+
+#Write a program that takes a word as a string and prints out the number of vowels and consonants in the word
+
+string_input = input("Enter a string: ")
+vowel_count = 0
+consonant_count = 0
+vowel_list = []
+consonant_list = []
+
+for letter in string_input:
+	if letter in 'aeiou':
+		vowel_list += letter
+		vowel_count += 1
+	else:
+		consonant_list += letter
+		consonant_count += 1
+
+print("The vowels are:", end = " ")
+for item in vowel_list:
+	print(item, end = " ") 
+print()
+
+print("The consonants are:", end = " ")
+for item in consonant_list:
+	print(item, end = " ") 
+print()
+
+print("Number of vowels: ", vowel_count)
+print("Number of consonants: ", consonant_count)

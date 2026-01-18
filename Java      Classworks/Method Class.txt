@@ -1,0 +1,67 @@
+//Method Class
+//Note there are no functions in java, but they will be refreshing to for ease, Static methods in java acts as functions in python.
+
+Crash course!! (Read up)
+
+Examples
+
+Public static int getAge(){
+	return 40;
+}
+
+Public static int add (int a, int b){
+	return a+b;
+}
+
+Public static void printName(String name){
+	System.out.print(name);
+}
+
+If no void you must put return as seen above
+Int, void is the output
+What is in the bracket is the input, this is also t he number of parameters 
+
+
+Public static int add (int a, int b){ and Public static int add (int b, int a){ are equivalent but not Public static int add (int a, double b){ and Public static int add (double a, int b){
+
+
+This is because they are of different data types 
+
+A method include the following 
+Method name, Number of parameters, Order of parameter and the type of parameters
+
+The order maters when the types are different , it doesn't matter when the types are the same
+
+Overloading, Method overloading is when the same method has different ways to receive input, so when there's a single error it displays multiple errors
+
+public class MethodsInJava{
+	
+	public static int add(int numberOne, int numberTwo){
+		return numberOne + numberTwo;
+
+	}
+	public static int add(double numberOne, int numberTwo){
+		return (int) numberOne + numberTwo;
+
+	}
+	public static int add(int numberOne, double numberTwo){
+		return numberOne + (int)numberTwo;
+
+	}
+	public static int add(double numberOne, double numberTwo){
+		return int(numberOne + numberTwo);
+	}
+}
+
+
+public class MethodClass{
+	
+	public static void main(String [] args){
+	
+		int sum = MethodsInJava.add(5.8,6.4);
+		System.out.print(sum);
+	}
+}
+
+Overriding
+
