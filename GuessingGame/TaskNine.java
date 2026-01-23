@@ -2,12 +2,14 @@ import java.util.Scanner;
 import java.util.Random;
 import java.util.Arrays;
  
-public class TaskEight{
+public class TaskNine{
 	public static void main(String[] args){
 		Random randomInt = new Random();
 		Scanner userInput = new Scanner(System.in);
 		boolean continueLoop = true;
 		int count = 0;
+		int highguess = 0;
+		int lowguess = 0;
 		int[] playerGuesses = new int[10];
 		int randomNumebr = randomInt.nextInt(20) + 1;
 
@@ -25,9 +27,11 @@ public class TaskEight{
 				if(usersGuess > randomNumebr || usersGuess < randomNumebr){
 					if (usersGuess > randomNumebr){
 						System.out.println("Too high");
+						highguess++;
 					}
 					else if(usersGuess < randomNumebr){
 						System.out.println("Too low");
+						lowguess++;
 					
 					}
 					count++;
@@ -64,6 +68,8 @@ public class TaskEight{
 		System.out.println("Highest: " + highest);
 		System.out.println("Lowest: " + lowest);
 		System.out.println("Average: " + average);
+		System.out.println("Number of too highs: " + highguess);
+		System.out.println("Number of too lows: " + lowguess);
 	}
 }
 

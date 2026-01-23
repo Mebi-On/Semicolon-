@@ -7,10 +7,11 @@ public class TaskSix{
 		Scanner userInput = new Scanner(System.in);
 		boolean continueLoop = true;
 		int count = 0;
+		int randomNumebr = randomInt.nextInt(20) + 1;
         	while (continueLoop) {
-			int randomNumebr = randomInt.nextInt(20) + 1;
+			
 			if(count >= 10){
-				System.out.print("GAME OVER");
+				System.out.print("\nGAME OVER");
 				System.out.print(randomNumebr + " is the answer");
 				continueLoop = false;
 			}
@@ -31,7 +32,7 @@ public class TaskSix{
 				else{	
 					if (usersGuess == randomNumebr){
 						System.out.println("You are correct");
-						System.out.println("You won in " + count + "attempts");
+						System.out.println("\nYou won in " + count + "attempts");
 						continueLoop = false;	
 					}else{
 						System.out.println("You no get am "+ randomNumebr + " is the answer" );

@@ -9,11 +9,12 @@ public class TaskSeven{
 		boolean continueLoop = true;
 		int count = 0;
 		int[] playerGuesses = new int[10];
+		int randomNumebr = randomInt.nextInt(20) + 1;
 
         	while (continueLoop) {
-			int randomNumebr = randomInt.nextInt(20) + 1;
+			
 			if(count >= 10){
-				System.out.println("GAME OVER");
+				System.out.println("\nGAME OVER");
 				System.out.println(randomNumebr + " is the answer");
 				continueLoop = false;
 			}
@@ -21,21 +22,21 @@ public class TaskSeven{
 				System.out.print("Guess a number between 1 and 20: ");
 				int usersGuess = userInput.nextInt();
 				playerGuesses[count] = usersGuess;
-				if(usersGuess > 20 || usersGuess < 0){
-					if (usersGuess > 20){
+				if(usersGuess > randomNumebr || usersGuess < randomNumebr){
+					if (usersGuess > randomNumebr){
 						System.out.println("Too high");
-						count++;
 					}
-					else if(usersGuess < 0){
+					else if(usersGuess < randomNumebr){
 						System.out.println("Too low");
-						count++;
 					
 					}
+					count++;
+
 				}
 				else{	
 					if (usersGuess == randomNumebr){
 						System.out.println("You are correct");
-						System.out.println("You won in " + count + "attempts");
+						System.out.println("You won in " + count + " attempts");
 						continueLoop = false;	
 					}else{
 						System.out.println("You no get am "+ randomNumebr + " is the answer" );
