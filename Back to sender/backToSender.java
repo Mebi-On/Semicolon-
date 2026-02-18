@@ -26,17 +26,19 @@ public class backToSender {
         int totalPay = basePay + (collectionRate * amountPer);
         System.out.println("Your total pay is: " + totalPay);
 
-        System.out.print("Do you want to calculate again? (yes/no): ");
-        String continueRunning = userInput.next().toLowerCase();
-        if (continueRunning.equals("yes")) {
-            continueLoop = true;
-        } else if (continueRunning.equals("no")) {
-            continueLoop = false;
-            System.out.println("Thank you for using the program.");
-        }
-        else{
-            System.out.println("Invalid input");
-            continueLoop = false;
+        while (continueLoop) {
+            System.out.print("Do you want to calculate again? (yes/no): ");
+            String continueRunning = userInput.next().toLowerCase();
+            if (continueRunning.equals("yes")) {
+                continueLoop = true;
+                break;
+            } else if (continueRunning.equals("no")) {
+                continueLoop = false;
+                System.out.println("Thank you for using the program.");
+            }
+            else{
+                System.out.println("Invalid input");
+            }
         }
     }
 }

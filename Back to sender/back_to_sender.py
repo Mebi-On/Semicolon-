@@ -22,16 +22,17 @@ def back_to_sender():
         total_pay = base_pay + (collection_rate * amount_per)
         print(f"Your total pay is: {total_pay}")
             
-        
-        continue_running = input("Do you want to calculate again? (yes/no): ").lower()
-        if continue_running == "yes":
-            continue_loop = True
-        elif continue_running == "no":
-            continue_loop = False
-            print("Thank you for using the program.")
-        else:
-            print("Invalid input")
-            continue_loop = False
+        while continue_loop:
+            continue_running = input("Do you want to calculate again? (yes/no): ").lower()
+            if continue_running == "yes":
+                continue_loop = True
+                break
+            elif continue_running == "no":
+                continue_loop = False
+                print("Thank you for using the program.")
+            else:
+                print("Invalid input")
+    
 
 def is_valid_input(user_input: int):
         if user_input.isdigit():

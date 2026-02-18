@@ -1,4 +1,4 @@
- public class SubjectSummary {
+public class SubjectSummary {
         public int[] subjectTotal;
         public float[] averageGrade;
         public int[] highestGrade;
