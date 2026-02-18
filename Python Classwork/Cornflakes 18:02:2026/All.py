@@ -118,7 +118,7 @@ def foutRightAngledTriangles():
         for height in range (userInput, 0, -1):
             for length in range (userInput - height):
                  print(' ', end =' ')
-            for k in range (height):
+            for space in range (height):
                 print('*', end = " ")
             print()
 
@@ -128,7 +128,7 @@ def foutRightAngledTriangles():
         for height in range (userInput + 1):
             for length in range (userInput - height):
                  print(' ', end =' ')
-            for k in range (height):
+            for space in range (height):
                 print('*', end = " ")
             print()
             
