@@ -1,4 +1,4 @@
-//Array lecture
+`//Array lecture
 
 import java.util.Scanner; 
 import java.util.Arrays; 
@@ -44,7 +44,7 @@ String sleeper = new String(character)
 //Enhanced for loop lets you see the elements 
 
 //Class example
-Scanner userInput =. New Scanner(System.in);
+Scanner userInput = new Scanner(System.in);
 
 int[] numbers = new int[5];
 
