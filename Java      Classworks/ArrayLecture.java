@@ -7,9 +7,9 @@ import java.util.Arrays;
 
 public class ArrayLecture{
 	public static void main (String [] args){
-		//int[] nums = {7, 8, 3};
+		// int[] nums = {7, 8, 3}; declaration an Array
 		
-		//for (int i : nums){ //Enhanced loop
+		for (int i : nums){ //Enhanced loop
 
 		Scanner scoreCollector = new Scanner (System.in); // new is instantiation creating an object
 		int [] scores = new int [10]; //Creates a new array of length 10 
@@ -56,7 +56,7 @@ for (int number : numbers){
 	System.out.print(number + " ")
 }
 
-Inversing an Array
+Inverting an Array
 [0, 1, 2, 3, 4]
 
 [4, 3, 2, 1, 0]
@@ -72,7 +72,7 @@ Num[index] = num[-index + num.length - 1]
 
 */
 
-//Multi dimensional array
+Multi dimensional array
 
 int[][] numberOfNumbers = {{1, 2, 3},{4, 5, 6},{7, 8, 9}};
 System.out.print(numberOfNumbers[1][2]); //Output-> 6 (item 2 of array 1)

@@ -115,25 +115,27 @@ public class Task {
 
     public static void sumOfEvenDigits(String userInput) {
         int sumOfEven = 0;
+        int digit;
+        System.out.println("HERE");
         for (int index = 0; index < userInput.length(); index++) {
-            int digit = userInput.charAt(index) ;
+            digit = (userInput.charAt(index) - '0') ;
             if (digit % 2 == 0) {
                 sumOfEven += digit;
             }
         }
         System.out.println("Sum of all even digits is = " + sumOfEven);
-    }//Fix, Starts at 50
+    }//Fix, Starts at 48
     
     public static void sumOfOddDigits(String userInput) {
         int sumOfOdd = 0;
         for (int index = 0; index < userInput.length(); index++) {
-            int digit = userInput.charAt(index) ;
+            int digit = userInput.charAt(index) - '0';
             if (digit % 2 != 0) {
-                sumOfOdd += digit;
+                sumOfOdd += digit ;
             }
         }
         System.out.println("Sum of all odd digits is = " + sumOfOdd);
-    }//Fix, Starts at 50
+    }//Fix, Starts at 48
 
     static void primeNumbers() {
         int count = 0;

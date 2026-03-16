@@ -1,0 +1,150 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12800\viewh12780\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf2 \
+
+\fs36 \cf0 Java Script Introduction\
+
+\f1\b0\fs24 \
+More than 90% of web applications run on JS\
+\
+
+\fs28 Learning objectives
+\fs24 \
+1. Define and explain basic concepts; variables, datatype, operators and control structures\
+\
+2. Demonstrate proficiency in JavaScript features; functions, arrays, objects and Document Object Model (DOM)\
+\
+3. Work with asynchronous JavaScript, including callbacks, promises and the \'93asynchronous/await\'94 syntax\
+\
+4. Interact with external API\'92s (Application Programming Interface)\
+\
+\
+JavaScript\
+Source code is parsed into a syntax tree\
+A JIT just In time compiler is then used; it reads line by line and compiles immediately \
+Converting the syntax to byte code then from byte code to machine code, which is then executed\
+\
+
+\f0\b\fs26 Variable declaration 
+\f1\b0\fs24 \
+var - var number = 6, the issue with this is if var number = 8 (same variable name) will run and override the previous value\
+let - let number = 1, solves this issue by throwing an error if another variable of the same name is declared \
+const -  \
+\
+
+\f0\b\fs26 Print in javascript
+\f1\b0\fs24 \
+Var number = 20\
+console.log(number) \
+\
+Comparitors\
+==\
+\pard\pardeftab720\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+It compares two values for equality after performing type conversion (coercion) if they are of different data types.\cf0 \kerning1\expnd0\expndtw0 \
+\cf2 \expnd0\expndtw0\kerning0
+====\
+ checks if two values are equal in both value and type, without performing any type conversion\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs26 \cf2 \
+Types of Variables\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs24 \cf2 \
+Primitive\
+Bool, Number, Null, Undefined, String\
+\
+Noon_Primitive\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs26 \cf2 Selection process
+\f1\b0\fs24 \
+Single selection (if) \
+Double select (if, else)	\
+Muti selection (if, elif, else and switch cases)\
+\
+
+\f0\b\fs26 Iteration
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\b \cf2 For loop:
+\f1\b0 \
+	for (let count = 0, count < 10, count++)\{\
+		console.log(count)\
+	\}\
+	
+\f0\b for /in loop
+\f1\b0 \
+	
+\f0\b for /of loop
+\f1\b0 \
+\
+While loop:\
+
+\f0\b 	do /while loop \
+
+\f1\b0 		let count = 0;\
+		do\{\
+			console.log(count)\
+			count ++\
+		\}while (count <11)\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs26 \cf2 Ternary operators
+\f1\b0\fs24 \
+\
+The below if, else if statement \
+if (age <= 13)\{\
+	console.log("Child")\
+\}\
+else if (age > 12 && age < 20)\{\
+	console.log("Teenager")\
+\}\
+else\{\
+	console.log("Adult")\
+\}\
+\
+Can be written as \
+let result = (age < 13) ? console.log("Child"): age < 20 ? console.log("Teenager"): console.log("Adult")\
+\
+
+\f0\b\fs26 \
+Collecting input form users 
+\f1\b0\fs24 \
+const prompt = require("prompt-sync")(\{ sigint: true \});  -> 
+\f0\b required
+\f1\b0 \
+\
+const prompt = require (\'91prompt-sync\'92)()\
+const name = prompt(\'94What\'92s your name? \'94)  \
+console.log(\'93Hello, $\{name\}!\'94)\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 const number = prompt(\'94Enter a number:  \'94)  \
+number = Number(number) \
+console.log(typeof(number))\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+\
+Type casting \
+\
+\
+\
+\
+\
+\
+\
+}
